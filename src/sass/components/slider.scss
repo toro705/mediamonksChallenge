@@ -1,0 +1,232 @@
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    &.current-slide {
+        display: block;
+        opacity: 0;
+        animation: slide-fade 0.2s 1.5s forwards;
+        -webkit-animation: slide-fade 0.2s 1.5s forwards;
+    }
+    
+    &.final-slide {
+        animation: slide-fade 0.1s forwards, final-slide-slide 1.5s forwards ease-in-out;
+        -webkit-animation: slide-fade 0.1s forwards, final-slide-slide 1.5s forwards ease-in-out;
+    }
+    
+    
+    .slide-title {
+        h1 {
+            display: inline;
+            font-size: 3.5em;
+            text-transform: uppercase;
+            border-bottom: 1px solid #fff;
+        }
+    } 
+        
+    .slide-text {
+        position: absolute;
+        width: initial;
+        bottom: 21px;
+        left: 340px;
+        a,
+        a:active,
+        a:visited {
+            color: #fff;
+        }
+    }
+    
+    
+    &:nth-child(2){
+        .slide-title {
+            position: absolute;
+            width: 450px;
+            top: 20px;
+            left: 30px;
+            text-align: left;
+        }
+        .slide-text {
+            position: absolute;
+            bottom: 100px;
+            left: 30px;
+        }
+    } 
+    
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(8),
+    &:nth-child(9),
+    &:nth-child(10) {
+        .slide-title {
+            position: absolute;
+            width: 490px;
+            top: 38vh;
+            left: 90px;
+            text-align: left;
+        }
+    }
+    
+    &:nth-child(5),
+    &:nth-child(6) {
+        .slide-title {
+            position: absolute;
+            width: 450px;
+            top: 38vh;
+            right: 105px;
+            text-align: right;
+        }
+    }
+    
+    &:nth-child(7) {
+        .slide-title {
+            position: absolute;
+            width: 450px;
+            top: 31vh;
+            right: 105px;
+            text-align: right;
+        }
+    }
+    
+    &:nth-child(11) {
+        .slide-title {
+            position: absolute;
+            width: 450px;
+            top: 20px;
+            right: 30px;
+            text-align: right;
+        }
+        .slide-text {
+            position: absolute;
+            top: 40vh;
+            right: 30px;
+            text-align: right;
+        }
+    }
+}
+
+
+ul {
+    position: absolute;
+    width: 260px;
+    right: 30px;
+    top: 48vh;
+    list-style-type: none;
+    li {
+        display: inline;
+        a,
+        a:active,
+        a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+.email,
+.twitter {
+    width: 6%;
+    height: 6%;
+    margin: 0 8px;
+}
+
+.facebook {
+    width: 3.5%;
+    height: 3.5%;
+}
+.prev {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40vh;
+    left: 30px;
+    cursor: pointer;
+}
+
+.prev:hover,
+.prev:focus,
+.prev:active {
+    transform: translateX(-5px);
+    transition: transform 0.2s;
+}
+
+.prev:hover > .arrow-left {
+    border-color: #939393;
+}
+
+.next {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40vh;
+    right: 20px;
+    cursor: pointer;
+}
+
+.next:hover,
+.next:focus,
+.next:active {
+    transform: translateX(5px);
+    transition: transform 0.2s;
+}
+
+.next:hover > .arrow-right {
+    border-color: #939393;
+}
+
+.arrow-left {
+    width: 35px;
+    height: 35px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-45deg);
+}
+
+.arrow-right {
+    width: 35px;
+    height: 35px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+.slider-nav {
+		position: absolute;
+		bottom: 20px;
+		left: 30px;
+
+	table, td {
+		border: 2px dotted #fff;
+		border-collapse: collapse;
+	}
+
+	td {
+		display: table-cell;
+		text-align: center;
+        width: 20px;
+        padding: 3px;
+        vertical-align: middle;;
+		cursor: pointer;
+	}
+
+	.nav-dot {
+		display: inline-block;
+		display:block;
+		height: 14px;
+		line-height: 14px;
+		font-size: 0.8em;
+	}
+
+	.nav-dot:hover,
+	.nav-dot:focus,
+	.nav-dot:active {
+		background-color: #fff;
+	}
+
+	.current-dot {
+		background-color: #fff;
+		transition: background-color 0.5s;
+	}
+}

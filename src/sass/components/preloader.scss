@@ -1,0 +1,95 @@
+.intro {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 5;
+    animation: intro-disappear 1s 3.9s forwards;
+    -webkit-animation: intro-disappear 1s 3.9s forwards;
+    img {
+        width: 0;
+        height: 0;
+        animation: monk-arise 0.5s 1s forwards, monk-hover 2s 1s infinite ease-in-out;
+        -webkit-animation: monk-arise 0.5s 1s forwards, monk-hover 2s 1s infinite ease-in-out;
+    }
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+
+    p {
+        margin-top: 4vh;
+    }
+
+}
+
+.beginning-text {
+    font-size: 0;
+    transform: translateX(65px);
+    animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards;
+    -webkit-animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards;
+}
+
+.exclamation {
+    font-size: 0;
+    transform: translateX(65px);
+    animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards, exclamation-disappear 0.1s 2.2s forwards;
+    -webkit-animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards, exclamation-disappear 0.1s 2.2s forwards;
+}
+
+.comma {
+    opacity: 0;
+    animation: text-slide 0.2s 2.2s forwards, comma-arise 0.1s 2.3s forwards;
+    -webkit-animation: text-slide 0.2s 2.2s forwards, comma-arise 0.1s 2.3s forwards;
+}
+
+.remaining-text {
+    opacity: 0;
+    font-size: 1em;
+    margin-left: 6px;
+    animation: text-slide 0.2s 2.2s forwards, text-fade-in 0.2s 2.7s forwards;
+    -webkit-animation: text-slide 0.2s 2.2s forwards, text-fade-in 0.2s 2.7s forwards;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    p {
+        margin-top: 4vh;
+    }
+}
+
+
+.beginning-text {
+    font-size: 0;
+    transform: translateX(65px);
+    animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards;
+    -webkit-animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards;
+}
+
+.exclamation {
+    font-size: 0;
+    transform: translateX(65px);
+    animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards, exclamation-disappear 0.1s 2.2s forwards;
+    -webkit-animation: beginning-text-arise 0.2s 1.5s forwards, text-slide 0.2s 2.2s forwards, exclamation-disappear 0.1s 2.2s forwards;
+}
+
+.comma {
+    opacity: 0;
+    animation: text-slide 0.2s 2.2s forwards, comma-arise 0.1s 2.3s forwards;
+    -webkit-animation: text-slide 0.2s 2.2s forwards, comma-arise 0.1s 2.3s forwards;
+}
+
+.remaining-text {
+    opacity: 0;
+    font-size: 1em;
+    margin-left: 6px;
+    animation: text-slide 0.2s 2.2s forwards, text-fade-in 0.2s 2.7s forwards;
+    -webkit-animation: text-slide 0.2s 2.2s forwards, text-fade-in 0.2s 2.7s forwards;
+}
